@@ -1,0 +1,20 @@
+# Normalize source and documentation text to LF.
+* text=auto
+*.md text eol=lf
+*.cff text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+*.svg text eol=lf
+
+# Preserve image bytes exactly.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary
