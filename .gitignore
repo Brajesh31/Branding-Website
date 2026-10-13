@@ -1,1 +1,18 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Generated Tailwind output
+/css/style.css
+/dist/
+
+# Local configuration and secrets
+.env*
+!.env.example
+
+# Tool output and logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+coverage/
+.DS_Store
+Thumbs.db
