@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or adapt this project, please cite it as below."
+title: "Fabulo Branding Website"
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Brajesh
+    affiliation: Independent developer
+version: "1.0.0"
+date-released: "2026-10-13"
+repository-code: "https://github.com/Brajesh31/Branding-Website"
+url: "https://github.com/Brajesh31/Branding-Website"
+license: MIT
+keywords:
+  - static website
+  - Tailwind CSS
+  - fashion
+  - landing page
