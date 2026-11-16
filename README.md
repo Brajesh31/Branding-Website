@@ -15,14 +15,15 @@
 
 **Fabulo** is a fashion-brand website concept focused on editorial presentation, seasonal collection storytelling, streetwear imagery, promotional messaging, and a clean footer. Its visual direction uses warm neutral surfaces, dark typography, brown accents, and fashion photography.
 
-> ⚠️ **Scope clarification:** This repository currently contains a static frontend concept. It is not a functioning e-commerce platform. Shopping, cashback, financing, and payment-related copy is presentation content only. There is no cart, checkout, inventory, account system, payment processor, reward engine, or order backend.
+> ⚠️ **Scope clarification:** This repository contains a static frontend concept, not a functioning e-commerce platform. Shopping, cashback, financing, and payment-related copy is presentation content only. There is no cart, checkout, inventory, account system, payment processor, reward engine, or order backend.
 
-### 🎯 Project goals
+## 🎯 Project goals
+
 - 🧵 Present a coherent fashion identity through a single landing page.
 - 🖼️ Use local editorial imagery and vector assets.
 - 🎨 Maintain a consistent visual hierarchy and warm palette.
 - 📱 Keep the layout usable across mobile and desktop viewports.
-- 🛠️ Provide a reproducible Tailwind CSS build.
+- 🛠️ Provide a reproducible Tailwind CSS build and automated static checks.
 - 📚 Make the repository maintainable through detailed documentation.
 
 ## 🪄 Page experience
@@ -33,10 +34,8 @@
 | 🌸 Seasonal story | Spring/Summer editorial heading, copy, and imagery | Static content |
 | 📼 Retro story | Retro-inspired collection narrative | Static content; CTA is not wired |
 | 🧢 Streetwear story | Streetwear feature and imagery | Static content; CTA is not wired |
-| 💳 Promotional strip | Cashback, financing, and payment-themed messages | Illustrative copy only |
+| 💳 Promotional concepts | Rewards and payment-themed messages | Illustrative copy only |
 | 🔗 Footer | Social, service, activity, and other labels | Plain text, not live links |
-
-Screenshots should be captured from the actual running page and stored in docs/assets/. Do not use fabricated screenshots as proof of implementation.
 
 ## 🧰 Technology stack
 
@@ -46,7 +45,8 @@ Screenshots should be captured from the actual running page and stored in docs/a
 | Tailwind CSS 3 | Utility-first styling |
 | Node.js + npm | Build tooling and dependency management |
 | Tailwind CLI | Generates the local stylesheet |
-| SVG | Vector assets |
+| Python standard library | Dependency-free repository tests and validation |
+| SVG | Vector assets and favicon |
 | JPEG | Editorial photography |
 | Static hosting | Deployment model |
 
@@ -57,29 +57,25 @@ Node.js is a build requirement, not an application server. No framework, API ser
 ~~~text
 Branding-Website/
 ├── .github/
-│   ├── ISSUE_TEMPLATE/       # Structured issue forms
-│   ├── workflows/            # CI and security automation
+│   ├── ISSUE_TEMPLATE/           # Bug, feature, and issue-routing forms
+│   ├── workflows/                # CI, CodeQL, and existing automation
+│   ├── dependabot.yml
 │   └── PULL_REQUEST_TEMPLATE.md
-├── Images/                   # Existing editorial images and SVG assets
-├── css/                      # Tailwind build output (generated)
+├── Images/                       # Existing editorial images and SVG assets
 ├── docs/
-│   ├── assets/               # Genuine screenshots and visual assets
-│   ├── diagrams/             # Mermaid architecture and flow diagrams
-│   ├── templates/            # Reusable engineering templates
-│   ├── ACCESSIBILITY.md
-│   ├── ARCHITECTURE.md
-│   ├── DEPLOYMENT.md
-│   ├── DEVELOPMENT.md
-│   ├── FAQ.md
-│   ├── FEATURES.md
-│   ├── PERFORMANCE.md
-│   ├── PROJECT_OVERVIEW.md
-│   ├── QA.md
-│   ├── SECURITY_MODEL.md
-│   └── TESTING.md
+│   ├── assets/                   # Documentation diagrams and screenshots
+│   ├── diagrams/                 # Mermaid flowcharts
+│   ├── templates/                # Reusable engineering templates
+│   └── ...                       # Architecture, testing, SEO, operations, etc.
 ├── scripts/
 │   └── validate-repository.py
+├── tests/
+│   └── test_repository.py
+├── 404.html
+├── favicon.svg
 ├── index.html
+├── robots.txt
+├── site.webmanifest
 ├── input.css
 ├── package.json
 ├── package-lock.json
@@ -94,16 +90,17 @@ Branding-Website/
 └── SUPPORT.md
 ~~~
 
-This is an orientation guide, not a command to remove existing files. Generated output and existing repository files may vary. Preserve existing assets and IDE files unless there is a deliberate, reviewed reason to change them.
+The tree is an orientation guide. Existing image assets, citation metadata, ownership rules, IDE files, and generated build output may not all be shown. Preserve existing project files unless removal is intentional and reviewed.
 
 ## 🚀 Quick start
 
 ### Prerequisites
-- Node.js compatible with the installed Tailwind toolchain.
+- Node.js 20 or a compatible supported release.
 - npm and Git.
+- Python 3 for repository tests.
 - A modern browser.
 
-### Installation and build
+### Install and build
 
 ~~~bash
 git clone https://github.com/Brajesh31/Branding-Website.git
@@ -128,18 +125,24 @@ npm run watch
 
 Stop the watcher or server with Ctrl + C.
 
-### Available npm scripts
+## 🧪 Quality checks
 
-| Script | Purpose |
-|---|---|
-| npm run build | Compile Tailwind CSS into the configured output |
-| npm run watch | Watch configured source files and rebuild CSS |
+Run all available checks:
 
-The package manifest is the source of truth for available scripts. Do not assume test, lint, start, or preview exists unless it is added and maintained.
+~~~bash
+npm ci
+npm run build
+npm test
+python scripts/validate-repository.py
+~~~
 
-## 🏗️ Architecture and request flow
+The test suite checks basic HTML metadata, heading structure, image alt attributes, local asset references, in-page fragments, and essential support files. It is not a browser automation suite, accessibility certification, security audit, or proof of production readiness.
 
-The application is intentionally static. There is no application server or database in the current design.
+Before release, also inspect the page manually at mobile and desktop widths, test keyboard navigation, check the browser console and network panel, and verify deployment behavior on the actual host.
+
+## 🏗️ Architecture and build flow
+
+Fabulo is intentionally static. The build compiles Tailwind source into a local stylesheet. The browser receives static HTML, CSS, and local media assets.
 
 ~~~mermaid
 flowchart TD
@@ -147,10 +150,8 @@ flowchart TD
     B --> C[index.html]
     C --> D[Local Images assets]
     C --> E[Generated css/style.css]
-    C --> F[Tailwind browser CDN script]
-    D --> G[Browser renders page]
-    E --> G
-    F --> G
+    D --> F[Browser renders page]
+    E --> F
 ~~~
 
 Build pipeline:
@@ -164,53 +165,30 @@ flowchart LR
     E --> F[Visitor browser]
 ~~~
 
-The HTML references both generated CSS and a Tailwind browser CDN script. Review this dual approach before production deployment. A predictable production setup should normally use the compiled local stylesheet and avoid unnecessary runtime dependencies.
-
-## 🧪 Quality checks
-
-Before submitting a change:
-1. Run npm ci when dependencies have changed.
-2. Run npm run build.
-3. Confirm the generated stylesheet exists at the configured path.
-4. Serve the site locally and inspect all sections.
-5. Check browser console and network requests.
-6. Review mobile and desktop layouts.
-7. Verify keyboard focus and image alternatives.
-8. Confirm buttons and links have real behavior or are not presented as interactive controls.
-9. Update relevant documentation.
-
-Run the repository structure validator:
-
-~~~bash
-python3 scripts/validate-repository.py
-~~~
-
-This script checks repository documentation and key source files. It is not a browser test, accessibility certification, security audit, or proof of production readiness.
+There is no application server or database. Do not document or advertise commerce, accounts, payment processing, or other backend behavior until it is implemented and tested.
 
 ## 📚 Documentation
 
-See docs/ for the complete guides, including project overview, feature inventory, architecture, development, deployment, accessibility, testing, QA, performance, security model, FAQ, Mermaid diagrams, and reusable engineering templates.
+The [documentation hub](docs/README.md) links to project overview, feature inventory, architecture, development, deployment, accessibility, testing, QA, performance, security, SEO, operations, release procedures, diagrams, and reusable templates.
 
 ## 🧭 Roadmap
 
-See ROADMAP.md for proposed improvements. Roadmap items are proposals until implemented and verified.
+See [ROADMAP.md](ROADMAP.md) for proposed improvements. Roadmap items are proposals until implemented and verified.
 
 ## 🤝 Contributing
 
-Contributions are welcome. Read CONTRIBUTING.md, follow CODE_OF_CONDUCT.md, and use the pull request template. For security-sensitive issues, follow SECURITY.md instead of opening a public issue.
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and use the pull request template. For security-sensitive issues, follow [SECURITY.md](SECURITY.md) instead of opening a public issue.
 
 ## 🛡️ Security
 
-This is a static frontend. Do not submit credentials, tokens, private user data, or payment details. Report vulnerabilities privately using SECURITY.md.
+This is a static frontend. Do not submit credentials, tokens, private user data, or payment details. Report vulnerabilities privately using [SECURITY.md](SECURITY.md).
 
 ## 📄 License and asset rights
 
-The project code is licensed under the MIT License. See LICENSE. Third-party photographs, icons, and other assets may have separate terms. Verify asset-specific rights and attribution before reuse; the repository's code license does not automatically grant rights to third-party imagery.
+The project code is licensed under the MIT License. See [LICENSE](LICENSE). Third-party photographs, icons, and other assets may have separate terms. Verify asset-specific rights and attribution before reuse; the repository's code license does not automatically grant rights to third-party imagery.
 
 ## 👤 Maintainer
 
 Maintained by **Brajesh Kumar**.
 
 <p align="center">Built with care for a clean, editorial fashion experience. 👗</p>
-
-Last updated: 2026-11-16 21:45 UTC
