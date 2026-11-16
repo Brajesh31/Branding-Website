@@ -1,0 +1,3 @@
+# Public static website crawler policy.
+User-agent: *
+Allow: /
