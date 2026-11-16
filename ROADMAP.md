@@ -1,35 +1,50 @@
-# Roadmap
+# 🧭 Fabulo Roadmap
 
-This is a lightweight set of possible directions, not a delivery schedule or commitment. Priorities may change as the project evolves.
+This roadmap separates the current implementation from potential future work. A roadmap item is not a delivered feature. Prioritize improvements by user value, risk, complexity, and maintenance cost.
 
-## Current baseline
+## 🧱 Current baseline
+- [x] Static HTML landing page.
+- [x] Tailwind CSS CLI build and watch commands.
+- [x] Local JPEG and SVG assets.
+- [x] Repository setup and contribution documentation.
+- [x] Architecture and workflow documentation.
 
-The repository contains one static Fabulo fashion landing page, local image and SVG assets, and a Tailwind CLI workflow. Buttons and footer labels are visual placeholders. There is no checkout, catalog service, content management, user data store, or backend.
+## 🧹 Quality and accessibility
+- [ ] Add meaningful image alternatives and dimensions.
+- [ ] Review semantic landmarks and heading order.
+- [ ] Replace non-functional buttons with real destinations or non-interactive presentation.
+- [ ] Audit contrast and visible keyboard focus.
+- [ ] Verify responsive behavior on real browsers and devices.
+- [ ] Optimize editorial imagery based on measured rendering needs.
+- [ ] Decide whether to remove the Tailwind browser CDN in production.
 
-## Potential next steps
+## 🧪 Engineering quality
+- [ ] Add HTML validation to CI.
+- [ ] Add link and asset reference validation.
+- [ ] Add browser smoke tests if automated behavior checks are needed.
+- [ ] Add accessibility automation and manual assistive-technology review.
+- [ ] Record a reproducible performance baseline.
+- [ ] Review and minimize workflow permissions.
 
-### Accessibility and responsive behavior
+## 🎨 Product and design
+- [ ] Capture genuine screenshots at documented viewport sizes.
+- [ ] Document typography, color, spacing, and image treatment as reusable design tokens.
+- [ ] Review mobile navigation semantics and usability.
+- [ ] Add visual regression checks if visual changes become frequent.
 
-- Add descriptive alternative text to informative photos and accessible names to SVG or icon imagery.
-- Check heading hierarchy, keyboard focus visibility, color contrast, and controls at mobile and desktop sizes.
-- Verify layout at common viewport widths and with zoom enabled.
+## 🛍️ Potential product expansion, not currently committed
 
-### Styling and delivery
+A real commerce experience would require a separate product and architecture decision. It may involve catalogue ownership, product data, inventory, cart, checkout, payment provider, shipping, taxes, returns, support, privacy, security, and operational monitoring.
 
-- Decide whether to rely on the Tailwind browser CDN, generated CSS, or a single documented strategy.
-- Make a reproducible static build and deployment process, including the expected output files and host configuration.
-- Add a responsive navigation pattern if navigation links are introduced.
+Do not add payment or customer-data collection merely to make the repository appear more sophisticated. Establish business requirements and a threat model first.
 
-### Functional interactions
+## 📊 Prioritization rubric
 
-- Define actual destinations and behavior for the current buttons and footer entries before presenting them as interactive controls.
-- If commerce or forms are introduced, design the required trusted services, privacy disclosures, accessibility, validation, and abuse protection first.
+| Priority | Meaning |
+|---|---|
+| P0 | Security, data loss, or release-blocking defect |
+| P1 | Core usability, accessibility, or build reliability |
+| P2 | Valuable quality improvement |
+| P3 | Optional polish or experiment |
 
-### Asset records
-
-- Record source URLs, author attribution, and license or permission information for each included image and vector asset.
-- Replace any asset whose origin or permitted reuse cannot be verified.
-
-## Prioritization
-
-Open an issue to propose a roadmap item. Explain the user need, expected scope, dependencies, and any new external service or data collection.
+Each roadmap change should have an issue, clear acceptance criteria, owner, and evidence of completion.
