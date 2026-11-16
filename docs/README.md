@@ -17,6 +17,10 @@ Welcome to the Fabulo engineering and project documentation. These guides descri
 | Understand security boundaries | [Security model](SECURITY_MODEL.md) |
 | Resolve common issues | [FAQ](FAQ.md) |
 | Understand the visual language | [Design system](DESIGN_SYSTEM.md) |
+| Understand file responsibilities | [Project structure](PROJECT_STRUCTURE.md) |
+| Review content and marketing copy | [Content guidelines](CONTENT_GUIDELINES.md) |
+| Check browser coverage | [Browser support](BROWSER_SUPPORT.md) |
+| Track known project risks | [Risk register](RISK_REGISTER.md) |
 | Record image rights | [Asset governance](ASSET_GOVERNANCE.md) |
 
 ## 🏗️ Engineering references
