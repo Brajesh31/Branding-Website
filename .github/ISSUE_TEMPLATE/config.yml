@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Project support
+    url: https://github.com/Brajesh31/Branding-Website/blob/main/SUPPORT.md
+    about: Read the support guide before opening a general question.
+  - name: 🔐 Security vulnerability
+    url: https://github.com/Brajesh31/Branding-Website/security/advisories/new
+    about: Report sensitive security issues privately. Do not publish exploit details in a public issue.
