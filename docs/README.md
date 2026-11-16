@@ -16,6 +16,8 @@ Welcome to the Fabulo engineering and project documentation. These guides descri
 | Review performance | [Performance](PERFORMANCE.md) |
 | Understand security boundaries | [Security model](SECURITY_MODEL.md) |
 | Resolve common issues | [FAQ](FAQ.md) |
+| Understand the visual language | [Design system](DESIGN_SYSTEM.md) |
+| Record image rights | [Asset governance](ASSET_GOVERNANCE.md) |
 
 ## 🏗️ Engineering references
 
