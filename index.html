@@ -1,141 +1,168 @@
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Fabulo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FBF7EE">
+    <meta name="description" content="Discover Fabulo's fashion editorial stories, seasonal inspiration, retro styling, and streetwear direction.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fabulo | Fashion Editorial">
+    <meta property="og:description" content="A fashion-brand concept exploring seasonal collections, retro inspiration, and streetwear.">
+    <title>Fabulo | Fashion Editorial</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="bg-[#FBF7EE]">
+  <body class="min-h-screen bg-[#FBF7EE] text-[#2B2521] antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-3 focus:text-black">
+      Skip to content
+    </a>
 
-    <nav class="flex justify-around items-center">
-      <div class="logo mt-5">
-        <h1 class="text-3xl font-serif">Fabulo</h1>
-      </div>
-      <div class="nav-image flex flex-row-reverse w-1/2 mt-5">
-        <img src="./Images/SVG/SVG 1.svg" class="ml-10">
-        <img src="./Images/SVG/SVG 2.svg" class="ml-10">
-        <img src="./Images/SVG/SVG 3.svg" class="ml-10">
-      </div>
-    </nav>
-    <br>
-    <hr>
-
-    <header class="mt-20 flex justify-around flex-wrap">
-
-      <div class="card-one">
-        <h1 class="font-bold mb-9 text-3xl">
-          Spring/Summer Vibs
-        </h1>
-        <p class="w-[340px] font-light">
-          Embrace the warmth and energy of the season with our Spring/Summer collection. From vibrant colors to breezy fabrics, our latest line is designed to keep you cool and stylish. Discover the perfect blend of comfort and fashion, and make every day a sunny adventure
-        </p>
-        <img src="./Images/mohamad-khosravi-DuY4JP2M34Q-unsplash.jpg" class="w-[300px] mt-8">
-      </div>
-
-      <div class="card-two">
-        <img src="./Images/austin-wade-d2s8NQ6WD24-unsplash.jpg" class="w-[300px] mb-8 rounded-t-full mt-8">
-        <p class="w-[340px] font-light mb-8">
-          Modern twists on classic styles. Rediscover vintage charm with our Retro Revival collection. Each piece blends the best of past and present, offering timeless elegance with a contemporary edge. Perfect for those who appreciate the beauty of yesteryears while staying on-trend.
-        </p>
-        <button class="border border-[#AF7452] px-5 py-2">Shop Now</button>
-      </div>
+    <header class="mx-auto max-w-7xl px-6">
+      <nav aria-label="Main navigation" class="flex flex-wrap items-center justify-between gap-6 border-b border-[#AF7452]/30 py-6">
+        <a href="#main-content" class="font-serif text-3xl font-semibold tracking-wide text-[#2B2521]">
+          Fabulo
+        </a>
+        <div class="flex items-center gap-5" aria-label="Decorative brand marks">
+          <img src="./Images/SVG/SVG 1.svg" alt="" aria-hidden="true" class="h-7 w-7">
+          <img src="./Images/SVG/SVG 2.svg" alt="" aria-hidden="true" class="h-7 w-7">
+          <img src="./Images/SVG/SVG 3.svg" alt="" aria-hidden="true" class="h-7 w-7">
+        </div>
+      </nav>
     </header>
 
-    <section class="my-20 flex justify-around flex-wrap">
-      <div class="flex flex-col justify-around items-start">
-        <h1 class="font-bold mb-9 text-3xl">
-          An Industrial Take <br>
-          On Streetwear 
-        </h1>
-        <p class="w-[340px] mb-5 font-light">
-          Step into the future of fashion with our industrial-inspired streetwear collection. Combining rugged materials with sleek designs, this line redefines urban style. Whether you're hitting the streets or the runway, our pieces are crafted to make a bold statement. Elevate your wardrobe with a touch of industrial edge
-        </p>
-        <button class="border border-[#AF7452] px-5 py-2">Explore</button>
+    <main id="main-content" class="mx-auto max-w-7xl px-6">
+      <section aria-labelledby="seasonal-heading" class="grid gap-12 py-16 md:grid-cols-2 md:items-center md:gap-20 md:py-24">
+        <div class="max-w-xl">
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#AF7452]">A season of expression</p>
+          <h1 id="seasonal-heading" class="mb-7 font-serif text-4xl font-semibold leading-tight sm:text-5xl">
+            Spring/Summer Vibes
+          </h1>
+          <p class="max-w-lg text-base leading-8 text-[#5B514B]">
+            Embrace the warmth and energy of the season with our Spring/Summer collection. From vibrant colors to breezy fabrics, this editorial story explores a relaxed approach to everyday style. Discover a blend of comfort, color, and effortless expression.
+          </p>
+          <img
+            src="./Images/mohamad-khosravi-DuY4JP2M34Q-unsplash.jpg"
+            alt="Fashion editorial photograph for the Spring/Summer collection story"
+            loading="lazy"
+            decoding="async"
+            class="mt-9 aspect-[4/5] w-full max-w-sm object-cover"
+          >
+        </div>
+
+        <div class="mx-auto w-full max-w-md">
+          <img
+            src="./Images/austin-wade-d2s8NQ6WD24-unsplash.jpg"
+            alt="Fashion editorial photograph accompanying the retro-inspired collection story"
+            loading="lazy"
+            decoding="async"
+            class="mb-8 aspect-[4/5] w-full rounded-t-full object-cover"
+          >
+          <p class="mb-7 max-w-lg text-base leading-8 text-[#5B514B]">
+            Modern twists on classic styles. Rediscover vintage charm with our Retro Revival story. Each look blends the character of past decades with a contemporary edge, celebrating timeless silhouettes and personal expression.
+          </p>
+          <span class="inline-flex border border-[#AF7452] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[#805238]">
+            Retro collection concept
+          </span>
+        </div>
+      </section>
+
+      <section aria-labelledby="streetwear-heading" class="grid items-center gap-12 border-t border-[#AF7452]/30 py-16 md:grid-cols-2 md:gap-20 md:py-24">
+        <div class="max-w-xl">
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#AF7452]">Style without a uniform</p>
+          <h2 id="streetwear-heading" class="mb-7 font-serif text-4xl font-semibold leading-tight sm:text-5xl">
+            An Industrial Take on Streetwear
+          </h2>
+          <p class="mb-7 max-w-lg text-base leading-8 text-[#5B514B]">
+            Step into an industrial-inspired streetwear direction. Rugged textures meet clean lines in a visual story that explores urban style, confident silhouettes, and expressive everyday dressing.
+          </p>
+          <span class="inline-flex border border-[#AF7452] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[#805238]">
+            Streetwear editorial
+          </span>
+        </div>
+        <img
+          src="./Images/austin-wade-iQn82USu8gs-unsplash.jpg"
+          alt="Streetwear editorial photograph illustrating the industrial-inspired style story"
+          loading="lazy"
+          decoding="async"
+          class="mx-auto aspect-[4/5] w-full max-w-md object-cover"
+        >
+      </section>
+
+      <section aria-labelledby="concepts-heading" class="border-t border-[#AF7452]/30 py-16 md:py-20">
+        <div class="mx-auto mb-10 max-w-2xl text-center">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#AF7452]">Concept cards</p>
+          <h2 id="concepts-heading" class="font-serif text-3xl font-semibold sm:text-4xl">A considered experience</h2>
+          <p class="mt-4 text-sm leading-7 text-[#5B514B]">
+            These cards illustrate possible brand-service messages. They are design concepts only and are not connected to live rewards, financing, shopping, or payment services.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="border border-[#AF7452]/30 p-8">
+            <h3 class="font-serif text-2xl font-semibold">Rewards concept</h3>
+            <p class="mt-4 leading-7 text-[#5B514B]">An example of how a future loyalty experience could communicate value and repeat engagement.</p>
+            <p class="mt-6 text-xs font-semibold uppercase tracking-widest text-[#AF7452]">Illustrative only</p>
+          </article>
+
+          <article class="border border-[#AF7452]/30 p-8">
+            <h3 class="font-serif text-2xl font-semibold">Flexible payment concept</h3>
+            <p class="mt-4 leading-7 text-[#5B514B]">A placeholder for future payment information, subject to a real provider, eligibility rules, and clear terms.</p>
+            <p class="mt-6 text-xs font-semibold uppercase tracking-widest text-[#AF7452]">Illustrative only</p>
+          </article>
+
+          <article class="border border-[#AF7452]/30 p-8">
+            <h3 class="font-serif text-2xl font-semibold">Payment information</h3>
+            <p class="mt-4 leading-7 text-[#5B514B]">A future store would need a verified payment provider and a properly implemented checkout before making security claims.</p>
+            <p class="mt-6 text-xs font-semibold uppercase tracking-widest text-[#AF7452]">Illustrative only</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[#AF7452]/30 bg-[#F4EDE2]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-5">
+        <div>
+          <a href="#main-content" class="font-serif text-3xl font-semibold text-[#2B2521]">Fabulo</a>
+          <p class="mt-4 max-w-xs text-sm leading-6 text-[#5B514B]">A fashion-brand landing page concept built around editorial stories and visual expression.</p>
+        </div>
+
+        <section aria-labelledby="footer-social">
+          <h2 id="footer-social" class="mb-4 font-serif text-xl font-semibold text-[#2B2521]">Social</h2>
+          <p class="text-sm leading-7 text-[#805238]">Facebook</p>
+          <p class="text-sm leading-7 text-[#805238]">Twitter</p>
+          <p class="text-sm leading-7 text-[#805238]">YouTube</p>
+          <p class="mt-2 text-xs text-[#6B625B]">Labels only, no external links configured.</p>
+        </section>
+
+        <section aria-labelledby="footer-service">
+          <h2 id="footer-service" class="mb-4 font-serif text-xl font-semibold text-[#2B2521]">Service</h2>
+          <p class="text-sm leading-7 text-[#805238]">Compare</p>
+          <p class="text-sm leading-7 text-[#805238]">Download</p>
+          <p class="text-sm leading-7 text-[#805238]">Feedback</p>
+          <p class="text-sm leading-7 text-[#805238]">Bug report</p>
+        </section>
+
+        <section aria-labelledby="footer-activity">
+          <h2 id="footer-activity" class="mb-4 font-serif text-xl font-semibold text-[#2B2521]">Activity</h2>
+          <p class="text-sm leading-7 text-[#805238]">Affiliate</p>
+          <p class="text-sm leading-7 text-[#805238]">Co-branding</p>
+          <p class="text-sm leading-7 text-[#805238]">Community</p>
+          <p class="text-sm leading-7 text-[#805238]">Giveaway</p>
+        </section>
+
+        <section aria-labelledby="footer-other">
+          <h2 id="footer-other" class="mb-4 font-serif text-xl font-semibold text-[#2B2521]">Other</h2>
+          <p class="text-sm leading-7 text-[#805238]">News</p>
+          <p class="text-sm leading-7 text-[#805238]">Partners</p>
+          <p class="text-sm leading-7 text-[#805238]">About</p>
+          <p class="text-sm leading-7 text-[#805238]">Contact</p>
+          <p class="text-sm leading-7 text-[#805238]">Terms of use</p>
+        </section>
       </div>
 
-      <img src="./Images/austin-wade-iQn82USu8gs-unsplash.jpg" class="w-[300px] mt-8">
-    </section>
-
-    <section class="flex justify-around items-center mt-20 p-10 flex-wrap">
-      <div class="p-10">
-        <h1 class="font-bold">
-          Cashback Rewards
-        </h1>
-        <p class="font-thin max-w-[220px] w-full mt-5">
-          Collect & Redeem on every order that you purchased.
-        </p>
-        <button class="border border-[#AF7452] px-5 py-2 mt-5">Collect</button>
+      <div class="border-t border-[#AF7452]/20 px-6 py-5 text-center text-xs text-[#6B625B]">
+        © Fabulo. Fashion editorial concept. No commerce services are currently provided.
       </div>
-
-      <div class="p-10">
-        <h1 class="font-bold">
-          Buy Now, Pay Later
-        </h1>
-        <p class="font-thin max-w-[220px] w-full mt-5">
-          0% interest financing available pay after 30 days.
-        </p>
-        <button class="border border-[#AF7452] px-5 py-2 mt-5">Explore</button>
-      </div>
-
-      <div class="p-10">
-        <h1 class="font-bold">
-          Secure Payments
-        </h1>
-        <p class="font-thin max-w-[220px] w-full mt-5">
-          Gurantee 100 secure payments online on our website.
-        </p>
-        <button class="border border-[#AF7452] px-5 py-2 mt-5">Shop Now</button>
-      </div>
-    </section>
-    <br>
-    <hr>
-
-    <footer class="h-[300px] flex justify-around py-5 px-10 text-[#AF7452] mt-6 flex-wrap">
-      <div class="h-[80%] w-[110px]">
-        <h1 class="text-3xl font-serif text-black text-center">Fabulo</h1>
-      </div>
-
-      <div class="h-[80%] flex flex-col w-[110px]">
-        <h1 class="text-3xl mb-2">Social</h1>
-        <p class="font-light">Facebook</p>
-        <p class="font-light">Twitter</p>
-        <p class="font-light">Youtube</p>
-      </div>
-
-      <div class="h-[80%] flex flex-col w-[110px]">
-        <h1 class="text-3xl mb-2">Service</h1>
-        <p class="font-light">Compare</p>
-        <p class="font-light">Download</p>
-        <p class="font-light">Feedback</p>
-        <p class="font-light">Bug Report</p>
-      </div>
-
-      <div class="h-[80%] flex flex-col w-[110px]">
-        <h1 class="text-3xl mb-2">Activity</h1>
-        <p class="font-light">Affiliate</p>
-        <p class="font-light">Co-branding</p>
-        <p class="font-light">Honor</p>
-        <p class="font-light">Giveaway</p>
-      </div>
-
-      <div class="h-[80%] flex flex-col w-[110px]">
-        <h1 class="text-3xl mb-2">Other</h1>
-        <p class="font-light">Teardown</p>
-        <p class="font-light">News</p>
-        <p class="font-light">Partners</p>
-        <p class="font-light">About</p>
-        <p class="font-light">Contact</p>
-        <p class="font-light">Terms of Use</p>
-      </div>
-
-      <div class=""></div>
-
     </footer>
-
-
-
   </body>
 </html>
