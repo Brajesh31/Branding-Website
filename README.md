@@ -1,57 +1,214 @@
-# Fabulo — fashion branding landing page
+# 👗 Fabulo | Fashion Brand Landing Page
 
-Fabulo is a small, static fashion-brand landing page built with HTML and Tailwind CSS. The page presents seasonal collection copy, promotional sections, imagery, and a footer. It is a front-end design/demo: the visible shopping, rewards, social, and footer labels are not connected to commerce, account, or navigation services.
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-Fabulo-AF7452?style=for-the-badge" alt="Fabulo">
+  <img src="https://img.shields.io/badge/HTML5-Static%20Website-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/License-MIT-2E8B57?style=for-the-badge" alt="MIT">
+</p>
 
-## What is in this repository
+<p align="center"><strong>A minimal editorial fashion-brand landing page concept built with HTML and Tailwind CSS.</strong></p>
 
-- A single page in **index.html**, with the Fabulo brand and collection sections.
-- Tailwind directives in **input.css** and a Tailwind 3 configuration in **tailwind.config.js**.
-- npm scripts for compiling and watching the stylesheet.
-- Local SVG and JPEG assets in **Images/**.
+---
 
-The project does not include a JavaScript application framework, server, API, database, user accounts, payment processing, contact form, or environment configuration. See [Architecture](docs/architecture.md) for the current boundaries and [API](docs/api.md) for the network surface.
+## ✨ Overview
 
-## Run locally
+**Fabulo** is a fashion-brand website concept focused on editorial presentation, seasonal collection storytelling, streetwear imagery, promotional messaging, and a clean footer. Its visual direction uses warm neutral surfaces, dark typography, brown accents, and fashion photography.
 
-Prerequisites: Node.js and npm, plus a browser. From the repository root:
+> ⚠️ **Scope clarification:** This repository currently contains a static frontend concept. It is not a functioning e-commerce platform. Shopping, cashback, financing, and payment-related copy is presentation content only. There is no cart, checkout, inventory, account system, payment processor, reward engine, or order backend.
 
-1. Install the exact locked dependencies with **npm ci**.
-2. Start a local static server from the repository root. For example, with Python installed, run **python -m http.server 8000**.
-3. Open **http://localhost:8000** in a browser.
+### 🎯 Project goals
+- 🧵 Present a coherent fashion identity through a single landing page.
+- 🖼️ Use local editorial imagery and vector assets.
+- 🎨 Maintain a consistent visual hierarchy and warm palette.
+- 📱 Keep the layout usable across mobile and desktop viewports.
+- 🛠️ Provide a reproducible Tailwind CSS build.
+- 📚 Make the repository maintainable through detailed documentation.
 
-A local server keeps relative image and stylesheet paths consistent with static hosting. The page also loads Tailwind's browser CDN script from the network. Review [Installation](docs/installation.md) for alternatives and details.
+## 🪄 Page experience
 
-## Build the stylesheet
+| Area | Visitor experience | Current behavior |
+|---|---|---|
+| 🏷️ Brand header | Fabulo identity and visual navigation assets | Static presentation |
+| 🌸 Seasonal story | Spring/Summer editorial heading, copy, and imagery | Static content |
+| 📼 Retro story | Retro-inspired collection narrative | Static content; CTA is not wired |
+| 🧢 Streetwear story | Streetwear feature and imagery | Static content; CTA is not wired |
+| 💳 Promotional strip | Cashback, financing, and payment-themed messages | Illustrative copy only |
+| 🔗 Footer | Social, service, activity, and other labels | Plain text, not live links |
 
-Run **npm run build** to invoke the Tailwind CLI. The configured output path is **css/style.css**, which is referenced by the HTML page. The generated file is not tracked; regenerate it after checkout and before publishing a deployment that needs the compiled stylesheet. The page also includes the Tailwind CDN script, so deployments currently depend on that external script for its runtime styling behavior.
+Screenshots should be captured from the actual running page and stored in docs/assets/. Do not use fabricated screenshots as proof of implementation.
 
-Use **npm run watch** while editing to regenerate the CSS when source content changes. Tailwind scans only root-level HTML files as configured in **tailwind.config.js**. If you add HTML elsewhere, update the content globs.
+## 🧰 Technology stack
 
-## Project documentation
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and content |
+| Tailwind CSS 3 | Utility-first styling |
+| Node.js + npm | Build tooling and dependency management |
+| Tailwind CLI | Generates the local stylesheet |
+| SVG | Vector assets |
+| JPEG | Editorial photography |
+| Static hosting | Deployment model |
 
-- [Architecture](docs/architecture.md)
-- [Installation](docs/installation.md)
-- [Development](docs/development.md)
-- [Deployment](docs/deployment.md)
-- [API and external requests](docs/api.md)
-- [Database and persistence](docs/database.md)
-- [Troubleshooting](docs/troubleshooting.md)
-- [Frequently asked questions](docs/faq.md)
-- [Contributing](CONTRIBUTING.md)
-- [Security policy](SECURITY.md)
-- [Support](SUPPORT.md)
-- [Roadmap](ROADMAP.md)
+Node.js is a build requirement, not an application server. No framework, API server, database, authentication service, payment SDK, or analytics platform is part of the current implementation.
 
-## Assets and licensing
+## 🗂️ Repository structure
 
-The project source is licensed under the MIT License; see [LICENSE](LICENSE). That grant applies to the project code and does not claim ownership of third-party material. The JPEG filenames identify Unsplash photographers, but this repository does not record source-page URLs or asset-specific license metadata. The SVG files also have no provenance record in the repository. Verify the applicable rights and attribution requirements for each image before reusing or redistributing those assets.
+~~~text
+Branding-Website/
+├── .github/
+│   ├── ISSUE_TEMPLATE/       # Structured issue forms
+│   ├── workflows/            # CI and security automation
+│   └── PULL_REQUEST_TEMPLATE.md
+├── Images/                   # Existing editorial images and SVG assets
+├── css/                      # Tailwind build output (generated)
+├── docs/
+│   ├── assets/               # Genuine screenshots and visual assets
+│   ├── diagrams/             # Mermaid architecture and flow diagrams
+│   ├── templates/            # Reusable engineering templates
+│   ├── ACCESSIBILITY.md
+│   ├── ARCHITECTURE.md
+│   ├── DEPLOYMENT.md
+│   ├── DEVELOPMENT.md
+│   ├── FAQ.md
+│   ├── FEATURES.md
+│   ├── PERFORMANCE.md
+│   ├── PROJECT_OVERVIEW.md
+│   ├── QA.md
+│   ├── SECURITY_MODEL.md
+│   └── TESTING.md
+├── scripts/
+│   └── validate-repository.py
+├── index.html
+├── input.css
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── ROADMAP.md
+├── SECURITY.md
+└── SUPPORT.md
+~~~
 
-## Browser and accessibility notes
+This is an orientation guide, not a command to remove existing files. Generated output and existing repository files may vary. Preserve existing assets and IDE files unless there is a deliberate, reviewed reason to change them.
 
-The document uses semantic navigation, header, section, and footer elements, but this is a minimal design snapshot rather than a complete commerce experience. Images currently have no alternative text, the SVG images do not declare accessible labels, and the visible buttons are not wired to actions. Address these items before presenting the page as a finished accessible storefront.
+## 🚀 Quick start
 
-## Maintainer
+### Prerequisites
+- Node.js compatible with the installed Tailwind toolchain.
+- npm and Git.
+- A modern browser.
 
-Brajesh Kumar — GitHub [@brajesh31](https://github.com/brajesh31).
+### Installation and build
 
-Last updated: 2026-11-16 17:44 UTC
+~~~bash
+git clone https://github.com/Brajesh31/Branding-Website.git
+cd Branding-Website
+npm ci
+npm run build
+~~~
+
+### Run locally
+
+~~~bash
+python -m http.server 8000
+~~~
+
+Open http://localhost:8000.
+
+For automatic CSS rebuilding during development:
+
+~~~bash
+npm run watch
+~~~
+
+Stop the watcher or server with Ctrl + C.
+
+### Available npm scripts
+
+| Script | Purpose |
+|---|---|
+| npm run build | Compile Tailwind CSS into the configured output |
+| npm run watch | Watch configured source files and rebuild CSS |
+
+The package manifest is the source of truth for available scripts. Do not assume test, lint, start, or preview exists unless it is added and maintained.
+
+## 🏗️ Architecture and request flow
+
+The application is intentionally static. There is no application server or database in the current design.
+
+~~~mermaid
+flowchart TD
+    A[Visitor opens Fabulo] --> B[Static hosting origin]
+    B --> C[index.html]
+    C --> D[Local Images assets]
+    C --> E[Generated css/style.css]
+    C --> F[Tailwind browser CDN script]
+    D --> G[Browser renders page]
+    E --> G
+    F --> G
+~~~
+
+Build pipeline:
+
+~~~mermaid
+flowchart LR
+    A[Clone repository] --> B[npm ci]
+    B --> C[Tailwind CLI]
+    C --> D[css/style.css]
+    D --> E[Static host]
+    E --> F[Visitor browser]
+~~~
+
+The HTML references both generated CSS and a Tailwind browser CDN script. Review this dual approach before production deployment. A predictable production setup should normally use the compiled local stylesheet and avoid unnecessary runtime dependencies.
+
+## 🧪 Quality checks
+
+Before submitting a change:
+1. Run npm ci when dependencies have changed.
+2. Run npm run build.
+3. Confirm the generated stylesheet exists at the configured path.
+4. Serve the site locally and inspect all sections.
+5. Check browser console and network requests.
+6. Review mobile and desktop layouts.
+7. Verify keyboard focus and image alternatives.
+8. Confirm buttons and links have real behavior or are not presented as interactive controls.
+9. Update relevant documentation.
+
+Run the repository structure validator:
+
+~~~bash
+python3 scripts/validate-repository.py
+~~~
+
+This script checks repository documentation and key source files. It is not a browser test, accessibility certification, security audit, or proof of production readiness.
+
+## 📚 Documentation
+
+See docs/ for the complete guides, including project overview, feature inventory, architecture, development, deployment, accessibility, testing, QA, performance, security model, FAQ, Mermaid diagrams, and reusable engineering templates.
+
+## 🧭 Roadmap
+
+See ROADMAP.md for proposed improvements. Roadmap items are proposals until implemented and verified.
+
+## 🤝 Contributing
+
+Contributions are welcome. Read CONTRIBUTING.md, follow CODE_OF_CONDUCT.md, and use the pull request template. For security-sensitive issues, follow SECURITY.md instead of opening a public issue.
+
+## 🛡️ Security
+
+This is a static frontend. Do not submit credentials, tokens, private user data, or payment details. Report vulnerabilities privately using SECURITY.md.
+
+## 📄 License and asset rights
+
+The project code is licensed under the MIT License. See LICENSE. Third-party photographs, icons, and other assets may have separate terms. Verify asset-specific rights and attribution before reuse; the repository's code license does not automatically grant rights to third-party imagery.
+
+## 👤 Maintainer
+
+Maintained by **Brajesh Kumar**.
+
+<p align="center">Built with care for a clean, editorial fashion experience. 👗</p>
