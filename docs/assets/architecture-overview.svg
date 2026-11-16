@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Fabulo static site architecture</title><desc id="desc">A browser requests the static HTML page, local image assets, compiled stylesheet, and a Tailwind CDN script. The browser renders the page.</desc>
+<rect width="1200" height="520" rx="28" fill="#fbf7ee"/>
+<text x="64" y="70" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#392a22">Fabulo · Static Site Architecture</text>
+<rect x="70" y="180" width="220" height="150" rx="18" fill="#3d3029"/>
+<text x="180" y="245" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#fff">Visitor</text><text x="180" y="280" text-anchor="middle" font-family="Arial" font-size="18" fill="#f7e9dd">Browser</text>
+<rect x="420" y="95" width="280" height="90" rx="16" fill="#af7452"/><text x="560" y="150" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">index.html</text>
+<rect x="420" y="215" width="280" height="90" rx="16" fill="#d7a77f"/><text x="560" y="270" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#392a22">css/style.css</text>
+<rect x="420" y="335" width="280" height="90" rx="16" fill="#ead7c5"/><text x="560" y="390" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#392a22">Images / SVG</text>
+<rect x="830" y="215" width="290" height="90" rx="16" fill="#6f8d77"/><text x="975" y="270" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">Tailwind CDN</text>
+<g stroke="#6b5142" stroke-width="4" fill="none"><path d="M290 220 L370 220 L370 140 L420 140"/><path d="M290 255 L420 260"/><path d="M290 290 L370 290 L370 380 L420 380"/><path d="M700 260 L830 260"/></g>
+<g fill="#6b5142"><path d="M410 132 l12 8 -12 8z"/><path d="M410 252 l12 8 -12 8z"/><path d="M410 372 l12 8 -12 8z"/><path d="M820 252 l12 8 -12 8z"/></g>
+<text x="64" y="480" font-family="Arial" font-size="17" fill="#6b5142">No project-owned API, database, authentication, or payment service is currently implemented.</text>
+</svg>
