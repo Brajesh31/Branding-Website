@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+<title id="title">Fabulo contribution workflow</title><desc id="desc">Contributors identify a problem, create a focused branch, implement a change, validate it, inspect the browser, update documentation, open a pull request, and receive review.</desc>
+<rect width="1200" height="460" rx="28" fill="#fbf7ee"/>
+<text x="60" y="68" font-family="Arial" font-size="30" font-weight="700" fill="#392a22">Contribution Workflow</text>
+<g font-family="Arial" font-size="19" font-weight="700" text-anchor="middle">
+<rect x="55" y="145" width="210" height="90" rx="16" fill="#3d3029"/><text x="160" y="198" fill="#fff">Identify issue</text>
+<rect x="330" y="145" width="210" height="90" rx="16" fill="#af7452"/><text x="435" y="198" fill="#fff">Create branch</text>
+<rect x="605" y="145" width="210" height="90" rx="16" fill="#d7a77f"/><text x="710" y="198" fill="#392a22">Implement</text>
+<rect x="880" y="145" width="260" height="90" rx="16" fill="#6f8d77"/><text x="1010" y="198" fill="#fff">Build + validate</text>
+<rect x="330" y="310" width="210" height="90" rx="16" fill="#ead7c5"/><text x="435" y="363" fill="#392a22">Update docs</text>
+<rect x="605" y="310" width="210" height="90" rx="16" fill="#af7452"/><text x="710" y="363" fill="#fff">Open PR</text>
+<rect x="880" y="310" width="260" height="90" rx="16" fill="#3d3029"/><text x="1010" y="363" fill="#fff">Review + merge</text>
+</g>
+<g stroke="#6b5142" stroke-width="4" fill="none"><path d="M265 190 H330 M540 190 H605 M815 190 H880 M1010 235 V270 H435 V310 M540 355 H605 M815 355 H880"/></g>
+<g fill="#6b5142"><path d="M320 182 l12 8 -12 8z"/><path d="M595 182 l12 8 -12 8z"/><path d="M870 182 l12 8 -12 8z"/><path d="M427 300 l8 12 8 -12z"/><path d="M595 347 l12 8 -12 8z"/><path d="M870 347 l12 8 -12 8z"/></g>
+</svg>
