@@ -1,16 +1,36 @@
-# Support
+# 🆘 Support and Help
 
-## Where to ask
+Thank you for using or contributing to Fabulo. This page helps route questions to the right place.
 
-- For a reproducible defect or a focused feature proposal, open an issue in the [GitHub repository](https://github.com/Brajesh31/Branding-Website/issues).
-- For questions about contributing, review [CONTRIBUTING.md](CONTRIBUTING.md).
-- For suspected security vulnerabilities, follow [SECURITY.md](SECURITY.md) and use a private reporting channel.
-- For conduct concerns, see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and contact the maintainer privately through [@brajesh31](https://github.com/brajesh31).
+## 🧭 Choose the right channel
 
-## Include useful details
+| Need | Where to go |
+|---|---|
+| 🐛 Confirmed bug in this repository | Open a GitHub issue using the bug report template |
+| 💡 Improvement idea | Open a feature request with context and expected value |
+| ❓ Setup or usage question | Review README and documentation, then open a discussion/issue if needed |
+| 🔐 Suspected security vulnerability | Follow SECURITY.md, not a public issue |
+| 🤝 Contribution process | Read CONTRIBUTING.md |
+| ⚖️ Community behavior concern | Follow CODE_OF_CONDUCT.md |
 
-When reporting a problem, describe what you expected and what happened, provide the browser and operating system, list the steps to reproduce it, and include relevant console or terminal output. Add a screenshot for visual defects. Remove credentials and personal data before sharing logs.
+## 📚 Start with the documentation
 
-## Project scope
+- Quick start: README.md
+- Development guide: docs/DEVELOPMENT.md
+- Deployment guide: docs/DEPLOYMENT.md
+- FAQ: docs/FAQ.md
+- Testing: docs/TESTING.md
 
-This repository is a small static landing-page project maintained by an individual. It has no hosted product support, uptime commitment, order processing, or guaranteed response time. The page's visible shopping, rewards, social, and footer labels are presentation content only; they do not represent working services.
+## 📝 Before asking for help
+
+Include what you were trying to do, exact commands or steps, expected behavior, actual behavior, operating system and Node/npm versions if relevant, browser and viewport if visual, and relevant error output with secrets removed.
+
+Avoid vague reports such as “it does not work.” A minimal reproduction saves time and makes a useful answer more likely.
+
+## ⚠️ Scope note
+
+Fabulo is a static frontend concept. Shopping, checkout, payment, cashback, rewards, inventory, and account features are not implemented. Questions about those labels should not be treated as support requests for live commerce functionality.
+
+## ⏳ Response expectations
+
+This is a community project without a guaranteed support SLA. Responses depend on maintainer and contributor availability. Please keep follow-ups constructive and avoid posting the same request repeatedly.
