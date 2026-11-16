@@ -1,27 +1,56 @@
-# Code of Conduct
+# 🤝 Contributor Covenant Code of Conduct
 
-## Our commitment
+## 🌱 Our pledge
 
-The Fabulo project welcomes participation from people with different backgrounds and experience. We want project discussions and contributions to remain respectful, constructive, and focused on improving the work.
+We as contributors, maintainers, and participants pledge to make participation in this project a respectful, constructive, and harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity or expression, experience level, education, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-## Expected behavior
+We commit to acting and interacting in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
-- Be considerate and respectful in discussions, reviews, and other project spaces.
-- Offer and receive feedback in good faith; critique code and ideas without attacking people.
-- Explain disagreements clearly and remain open to correction.
-- Respect privacy and do not publish another person's private information.
-- Follow the repository's contribution, security-reporting, and licensing guidance.
+## 💬 Our standards
 
-## Unacceptable behavior
+Examples of behavior that supports a positive environment include demonstrating empathy and patience, respecting differing opinions and experiences, giving and receiving constructive feedback gracefully, accepting responsibility and learning from mistakes, focusing on what is best for the project, using welcoming language, and respecting boundaries and privacy.
 
-Harassment, discriminatory language or conduct, threats, personal attacks, deliberate intimidation, unwanted sexual attention, doxxing, and disruptive behavior that prevents others from participating are not acceptable. This applies in repository issues, pull requests, reviews, and project-related communication.
+Examples of unacceptable behavior include sexualized language or imagery and unwelcome sexual attention; trolling, insults, derogatory comments, and personal attacks; public or private harassment; publishing another person's private information without permission; threats, intimidation, or deliberate disruption; sustained unwanted contact after a request to stop; and conduct reasonably considered inappropriate in a professional setting.
 
-## Maintainer response
+## 🧭 Scope
 
-Project maintainers are responsible for clarifying and enforcing these standards. They may edit or remove unacceptable content, close discussions, or restrict participation when needed. Decisions should be proportionate to the behavior and the goal of keeping the project safe and useful.
+This Code applies within project spaces and when an individual is officially representing the project in public spaces. Examples include repository issues, pull requests, discussions, project communication channels, and public events where a person represents the project.
 
-To report conduct that violates this policy, contact the maintainer through the GitHub profile at [@brajesh31](https://github.com/brajesh31). Please include links or context needed to understand the concern. Do not use a public issue for sensitive personal information.
+Maintainers may clarify whether conduct outside project spaces affects participation.
 
-## Scope
+## 🛡️ Enforcement responsibilities
 
-This policy applies in project spaces and when someone is representing the project or its community in a public setting. It is intended to support respectful collaboration, not to restrict good-faith technical disagreement.
+Project maintainers are responsible for clarifying and enforcing these standards. They may remove, edit, or reject comments, commits, code, issue descriptions, and other contributions that violate this Code. Maintainers may temporarily or permanently restrict participation when necessary.
+
+Maintainers should act proportionately, document decisions where appropriate, and protect the privacy of people who report concerns.
+
+## 📣 Reporting
+
+Report unacceptable behavior to the project maintainer through the private contact method listed in the repository owner's GitHub profile. Do not publish sensitive details in a public issue.
+
+A report should include, where safely possible:
+1. Your preferred contact method.
+2. A description of the behavior.
+3. Links, dates, or relevant context.
+4. Any immediate safety concern.
+5. Whether you consent to the information being shared with other maintainers.
+
+Reports will be reviewed as promptly as practical. Maintainers will respect confidentiality to the extent possible while investigating and addressing the issue. Do not use this process for general support or vulnerability reports.
+
+## ⚖️ Enforcement guidelines
+
+Maintainers may apply the following responses:
+1. **Correction:** A clarification of expected behavior.
+2. **Warning:** A formal warning and explanation.
+3. **Temporary restriction:** A temporary restriction from project interaction spaces.
+4. **Permanent restriction:** A permanent ban from project spaces for repeated or severe violations.
+
+The response will be selected based on severity, impact, context, and history. Maintainers may skip steps when warranted by safety concerns.
+
+## 📚 Attribution
+
+This Code of Conduct is adapted from the Contributor Covenant, version 2.1. See https://www.contributor-covenant.org/version/2/1/code_of_conduct.html for the canonical text and guidance.
+
+## 🙏 Closing
+
+A healthy project depends on respectful collaboration. Treat people with dignity, make room for different perspectives, and help keep the community constructive.
