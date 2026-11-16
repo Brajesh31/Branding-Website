@@ -1,0 +1,46 @@
+name: 🧪 Build and Repository Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Tailwind build and documentation validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 📦 Install locked dependencies
+        run: npm ci
+
+      - name: 🏗️ Build stylesheet
+        run: npm run build
+
+      - name: 🔎 Verify generated stylesheet
+        run: test -s css/style.css
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: 📚 Validate repository documentation
+        run: python scripts/validate-repository.py
