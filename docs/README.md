@@ -22,17 +22,20 @@ Welcome to the Fabulo engineering and project documentation. These guides descri
 | Check browser coverage | [Browser support](BROWSER_SUPPORT.md) |
 | Track known project risks | [Risk register](RISK_REGISTER.md) |
 | Record image rights | [Asset governance](ASSET_GOVERNANCE.md) |
+| Manage search and social metadata | [SEO and metadata](SEO_AND_METADATA.md) |
+| Prepare and verify releases | [Release process](RELEASE_PROCESS.md) |
+| Handle routine operations | [Operations guide](OPERATIONS.md) |
 
 ## 🏗️ Engineering references
 
 - [Architecture diagrams](diagrams/README.md)
 - [Reusable engineering templates](templates/README.md)
 - [Documentation assets and screenshots](assets/README.md)
-- Root [contribution guide](../CONTRIBUTING.md)
-- Root [security policy](../SECURITY.md)
-- Root [support guide](../SUPPORT.md)
-- Root [changelog](../CHANGELOG.md)
-- Root [roadmap](../ROADMAP.md)
+- [Root contribution guide](../CONTRIBUTING.md)
+- [Root security policy](../SECURITY.md)
+- [Root support guide](../SUPPORT.md)
+- [Root changelog](../CHANGELOG.md)
+- [Root roadmap](../ROADMAP.md)
 
 ## ⚠️ Documentation policy
 
