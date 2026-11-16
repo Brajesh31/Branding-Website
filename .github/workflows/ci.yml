@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    name: Tailwind build and documentation validation
+    name: Tailwind build and quality checks
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout
@@ -41,6 +41,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: 🧪 Run static repository tests
+        run: npm test
 
       - name: 📚 Validate repository documentation
         run: python scripts/validate-repository.py
