@@ -1,0 +1,54 @@
+name: "🐛 Bug report"
+description: Report a reproducible problem in the Fabulo repository
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve Fabulo. Do not include secrets or personal data."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken and who is affected?
+      placeholder: Describe the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open...\n2. Resize...\n3. Observe..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, OS, viewport, and commit
+      placeholder: Chrome, Windows, 390x844, commit SHA
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      description: Remove credentials, tokens, and private information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: This report does not contain secrets or private data.
+          required: true
