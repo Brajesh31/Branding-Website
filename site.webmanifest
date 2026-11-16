@@ -1,0 +1,17 @@
+{
+  "name": "Fabulo | Fashion Editorial",
+  "short_name": "Fabulo",
+  "description": "A fashion-brand editorial landing page concept.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF7EE",
+  "theme_color": "#FBF7EE",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
