@@ -1,0 +1,44 @@
+name: "💡 Feature request"
+description: Propose a scoped improvement or new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Explain the user problem first. Proposed features are not considered implemented until merged and verified."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and user value
+      description: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful approach.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Accessibility, privacy, security, and maintenance impact
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and roadmap items.
+          required: true
